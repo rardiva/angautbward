@@ -161,8 +161,9 @@ aside#sidebar .quote input, aside#sidebar .quote textarea{
 
 /* Main-col */
 article#main-col{
-  float:center;
-  width:100%;
+  margin-left:10%;
+  margin-right:10%;
+  width:80%;
 }
 
 /* Services */
