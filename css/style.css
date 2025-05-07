@@ -163,6 +163,7 @@ aside#sidebar .quote input, aside#sidebar .quote textarea{
 article#main-col{
   margin-left:10%;
   margin-right:10%;
+  float: center;
   width:80%;
 }
 
