@@ -300,3 +300,8 @@ footer{
     .highlight{
         color:red;
     }
+
+.awarenesspics{
+  max-hight: 50%;
+  max-width: 70%;
+}
