@@ -38,8 +38,49 @@
             <input type="password" id="loginPassword" required> <!-- Input field for password -->
             <button type="submit" class="log">Login</button> <!-- Login button -->
         </form>
-        <p>Don't have an account? <a href="#" id="registration">Register here</a></p> <!-- Registration link -->
+        <p>Don't have an account? <a href="#" id="accountForm">Register here</a></p> <!-- Registration link -->
       </div>
+
+      <!-- This portal is to create personal account -->
+<div id="personal" class="container" style="display: none;">
+    <h2>Create Your <br>Account</h2>
+    <form id="registrationFormPersonal">
+        <img class="butterfly" src="./img/img8.png">
+        <label for="username">Username:</label>
+        <input type="text" id="username" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" placeholder="Enter your password" required>
+
+        <label for="confirmPassword">Confirm Password:</label>
+        <input type="password" id="confirmPassword" placeholder="Re-type your password" required>
+
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" required>
+
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" required>
+
+        <label for="position">Employment Status:</label>
+        <select id="position">
+            <option value="Engineer">Student</option>
+            <option value="Teacher"><br>Employed</option>
+            <option value="Doctor">Self-employed</option>
+            <!-- Add more positions as needed -->
+        </select>
+
+        <!-- <label for="profilePicture">Profile Picture:</label>
+        <input type="file" id="profilePicture" accept="image/*" required>
+
+        <label for="coverPhoto">Cover Photo:</label>
+        <input type="file" id="coverPhoto" accept="image/*" required> -->
+
+        <button type="submit" class="create" >Create Account</button>
+    </form>
+    <p>Login your account? <a href="#" id="goLogin">Login here</a></p>
+</div>
+
+
     </section>
 
     <section id="newsletter"> <!-- Newsletter subscription section -->
