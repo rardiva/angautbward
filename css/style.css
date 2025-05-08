@@ -302,7 +302,8 @@ footer{
     }
 
 .awarenesspics{
-  object-fit: contain;
+  display:flex;
+  object-fit: cover;
   height:300px;
   width:200px;
 }
