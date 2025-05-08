@@ -129,6 +129,11 @@ header a:hover{
   width:250px;
 }
 
+.tbawareness{
+  font-size: 14px;
+  text-align: justify;
+}
+
 /* Boxes */
 #boxes{
   margin-top:20px;
