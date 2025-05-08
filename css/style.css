@@ -302,6 +302,6 @@ footer{
     }
 
 .awarenesspics{
-  object-fit: cover;
+  object-fit: contain;
   
 }
