@@ -301,9 +301,9 @@ footer{
         color:red;
     }
 
-.awarenesspics{
-  display:flex;
-  object-fit: cover;
-  height:300px;
-  width:200px;
+.awarenesspics {
+  width: 100%; /* Makes the image fit within its container */
+  height: auto; /* Maintains the aspect ratio */
+  display: block; /* Removes unwanted spacing below images */
 }
+
