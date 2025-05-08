@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
     chooseAccount.addEventListener("click", (event) => {
     event.preventDefault();
     document.getElementById("login").style.display = "none";
-    document.getElementById("account").style.display = "block";
+    document.getElementById("personal").style.display = "block";
     });
 
         chooseAccountLOut.addEventListener("click", (event) => {
