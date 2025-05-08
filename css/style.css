@@ -161,10 +161,10 @@ aside#sidebar .quote input, aside#sidebar .quote textarea{
 
 /* Main-col */
 article#main-col{
-  margin-left:10%;
-  margin-right:10%;
+  margin-left:5%;
+  margin-right:5%;
   float: center;
-  width:80%;
+  width:,90%;
 }
 
 /* Services */
