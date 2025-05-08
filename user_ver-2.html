@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="user_ver-2.css">
+    <title>User Registration and Profile</title>
+</head>
+<body>
+
+<!-- This portal is to login account -->
+    <div id="login" class="container">
+        <h2>Welcome to Butterfly <br> Sign in your account</h2>
+        <form id="loginForm">
+            <img class="butterfly" src="./butterfly.png"
+            <label for="loginUsername">Username:</label>
+            <input type="text" id="loginUsername" required>
+            <label for="loginPassword">Password:</label>
+            <input type="password" id="loginPassword" required>
+
+            <button type="submit" class="log">Login</button>
+        </form>
+        <p>Don't have an account? <a href="#" id="chooseAccount">Register here</a></p>
+    </div> 
+
+<!-- This portal is to choose account type-->
+    <div id="account" class="container" style="display: none;">
+        <h2>What account do you want to create?</h2>
+        <form id="accountForm">
+        </form>
+        <p>Personal User Account.<a href="#" id="personalLogin"> Next</a></p>
+        <p>Small & Medium Enterprise Account.<a href="#" id="msmeLogin"> Next</a></p>
+        <p>Business Account.<a href="#" id="businessLogin"> Next</a></p>
+    </div>
+
+<!-- This portal is to create personal account -->
+<div id="personal" class="container" style="display: none;">
+    <h2>Create Your Butterfly <br>Personal Account</h2>
+    <form id="registrationFormPersonal">
+        <img class="butterflyPersonal" src="C:\Users\user_01\Desktop\CasIki\Phase_3\Version_2\butterfly.png">
+        <label for="username">Username:</label>
+        <input type="text" id="username" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" placeholder="Enter your password" required>
+
+        <label for="confirmPassword">Confirm Password:</label>
+        <input type="password" id="confirmPassword" placeholder="Re-type your password" required>
+
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" required>
+
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" required>
+
+        <label for="position">Position:</label>
+        <select id="position">
+            <option value="Engineer">Engineer</option>
+            <option value="Teacher"><br>Teacher</option>
+            <option value="Doctor">Doctor</option>
+            <option value="Account">Account</option>
+            <option value="Software">Software Engineer</option>
+            <option value="Student">Student</option>
+            <option value="Enterprenur">Enterpreneur</option>
+            <option value="Lawyer">Lawyer</option>
+            <option value="Lecturer">Lecturer</option>
+            <option value="Driver">Driver</option>
+            <option value="Self-Employed">Student</option>
+            <!-- Add more positions as needed -->
+        </select>
+
+        <label for="profilePicture">Profile Picture:</label>
+        <input type="file" id="profilePicture" accept="image/*" required>
+
+        <label for="coverPhoto">Cover Photo:</label>
+        <input type="file" id="coverPhoto" accept="image/*" required>
+
+        <button type="submit" class="create" >Create Account</button>
+    </form>
+    <p>Login your account? <a href="#" id="goLogin">Login here</a></p>
+</div>
+
+<!-- This portal is to create medium and small business e-market platforms -->
+<div id="msme" class="container" style="display: none;">
+    <h2>Create Your Butterfly <br>Micro & Small Business Account</h2>
+    <form id="registrationFormMSME">
+        <img class="butterflyMsme" src="C:\Users\user_01\Desktop\CasIki\Phase_3\Version_2\butterfly.png">
+
+        <label for="username">Username:</label>
+        <input type="text" id="username" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" placeholder="Enter your password" required>
+
+        <label for="confirmPassword">Confirm Password:</label>
+        <input type="password" id="confirmPassword" placeholder="Re-type your password" required>
+
+        <label for="shopName">Market Name:</label>
+        <input type="text" id="shopName" placeholder="Enter a valid name for your online shop" required>
+
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" required>
+
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" required>
+
+        <label for="business">Type of Business:</label>
+        <select id="business">
+            <option value="bakery">Bakery</option>
+            <option value="art">Art & Craft</option>
+            <option value="painting">Painting & Drawings</option>
+            <option value="garden">Garden Produce</option>
+            <option value="street">Street Food</option>
+            <option value="taxi">Taxi Service</option>
+            <option value="bakery">Tailoring</option>
+            <option value="tire">Tyre Service</option>
+            <option value="fish">Fish Market</option>
+            <option value="rooms">Rent Rooms</option>
+
+            <!--Add more positions as needed -->
+        </select>
+
+        <label for="eshopLogo">Logo:</label>
+        <input type="file" id="eshopLogo" accept="image/*" required>
+
+        <label for="eshopCoverLogoe">Cover Logo:</label>
+        <input type="file" id="eshopCoverLogo" accept="image/*" required>
+
+        <button type="submit" class="create" >Create Account</button>
+    </form>
+    <p>Login your account? <a href="#" id="MSMEgoLogin">Login here</a></p>
+</div>
+
+        <!--These buttons are controls for the MAGAZINE-->
+        <div id="magazine" style="display: none;">
+            <nav></nav>
+            <a href="#"><img id="profilePicDisplay" alt="Profile Picture" class="propic"/></a>
+            <p id="userInfo" class="identity"></p>
+            <img class="butterflyBrand" src="C:\Users\user_01\Desktop\CasIki\Phase_3\Version_2\butterfly.png">
+
+            <div class="containerPost">
+                <form id="uploadForm">
+                    <input type="file" id="fileInput" accept="image/*,video/*" class="postFile" required>
+                    <textarea id="captionInput" placeholder="Write a caption..." class="upLoad" required></textarea>
+                    <button type="submit" class="btn2">PUBLISH</button>
+                </form> 
+            </div>
+            <div id="mediaContainer"></div>
+
+            <button id="showInform" class="btn3">INFORM</button>
+            
+            <div class="dropdown">
+            <button onclick="toggleDropdown()" class="dropbtn">PROVINCE</button>
+            <div id="showProvince" class="dropdown-content">
+            <a href="#">AROB</a>
+            <a href="#" id="showCentral">Central</a>
+            <a href="#">Chimbu</a>
+            <a href="#">Eastern Highlands</a>
+            <a href="#">East New Britain</a>
+            <a href="#">East Sepik</a>
+            <a href="#">Enga</a>
+            <a href="#" id="showGulf">Gulf</a>
+            <a href="#">Hela</a>
+            <a href="#">Jiwaka</a>
+            <a href="#">Lorengau</a>
+            <a href="#">Madang</a>
+            <a href="#">Milne Bay</a>
+            <a href="#" id="showMorobe">Morobe</a>
+            <a href="#">National Capital District</a>
+            <a href="#">New Ireland</a>
+            <a href="#">Oro</a>
+            <a href="#">Sandaun</a>
+            <a href="#">Southern Highlands</a>
+            <a href="#">Western</a>
+            <a href="#">Western Highlands</a>
+            <a href="#">West New Britain</a>
+        </div>
+    </div>
+
+    <table class="magTableRight">
+        <td>
+            <tr></tr>
+        </td>
+    </table>
+
+    <table class="magTableLeft"></table>
+        <td>
+            <tr></tr>
+        </td>
+    </table>
+
+            <div>
+                <input type="text" id="searchInput" placeholder="Search by username" class="searBar">
+                <button class="btn5" onclick="searchUser()">SEARCH</button>
+            </div>
+            <div id="profileDisplay"></div>
+            <button class="brandBtn">M A G A Z I N E</button>
+            <button class="brandShops">S H O P S</button>
+            <button class="brandTourSites">T O U R  <br>D E S T I N A T I O N S</button>
+        </div>
+
+
+
+
+
+
+        
+         <!--These buttons are controls for the PROFILE-->
+         <div id="profile" style="display: none;">
+            <nav></nav>
+            <img id="profilePicProf" src="" alt="Profile Picture" class="propicProf"/>
+            <img id="covPhotoProf"  src="" alt="Cover Photo" class="coverPhotoProf"/>
+            <img class="butterflyBrand" src="C:\Users\user_01\Desktop\CasIki\Phase_3\Version_2\butterfly.png">
+            <p id="userInfoProf" class="identityProf"></p>
+            <p id="userPositionProf" class="positionProf"></p>
+            
+                <button id="showMagazine" class="btn1Prof">MAGAZINE</button>
+                <button id="showInformProf" class="btn2Prof">INFORM</button>
+                <button id="showPublication" class="btn3Prof">PUBLICATION</button>
+                <button id="showNetwork" class="btn4Prof">NETWORK</button>
+                <button id="showFolder" class="btn5Prof">FOLDER</button>
+                <button id="showLogout" class="btn6Prof">LOG OUT</button>    
+
+            </div>
+
+
+
+
+
+
+
+         <!--These buttons are controls for the MSME-->
+         <div id="MsmeShop" style="display: none;">
+            <nav></nav>
+            <img id="eshopLogoProf" alt="Profile Picture" class="propicProf"/>
+            <img id="covPhotoProf"  alt="Cover Photo" class="coverPhotoProf"/>
+            <img class="butterflyBrand" src="C:\Users\user_01\Desktop\CasIki\Phase_3\Version_2\butterfly.png">
+            <p id="userInfoMsme" class="identityProf"></p>
+
+            
+                <button id="showeShop" class="btn1Prof">MAGAZINE</button>
+                <button id="showInformc" class="btn2Prof">INFORM</button>
+                <button id="showPublicationeShop" class="btn3Prof">PUBLICATION</button>
+                <button id="showNetworkeShop" class="btn4Prof">NETWORK</button>
+                <button id="showFoldereShop" class="btn5Prof">FOLDER</button>
+                <button id="logouteShop" class="btn6Prof">LOG OUT</button>
+                <button class="btnPro">P R O F I L E</button>
+
+                <table class="resumeTable">
+                <td>
+                    <tr></tr>
+                </td>
+                </table>
+            </div>
+
+
+
+
+
+<!--These buttons are controls for the CENTRAL-->
+<div id="central" style="display: none;">
+    <nav></nav>
+    <a href="#"><img id="proPicCent" alt="Profile Picture" class="propic"/></a>
+    <p id="userInfoCent" class="identity"></p>
+    <img class="butterflyBrand" src="C:\Users\user_01\Desktop\CasIki\Phase_3\Version_2\butterfly.png">
+
+    <button id="showInform1" class="btn3">INFORM</button>
+    
+    <div class="dropdownCent">
+    <button onclick="toggleDropdown()" class="dropbtnCent">DISTRICT</button>
+    <div id="showCent" class="dropdownCent-content">
+    <a href="#">Abau</a>
+    <a href="#">Goilala</a>
+    <a href="#">Kairuku-Hiri</a>
+    <a href="#">Koiari-Hiri</a>
+    <a href="#">Rigo</a>
+</div>
+</div>
+
+<table class="magTableRight">
+<td>
+    <tr></tr>
+</td>
+</table>
+
+<table class="magTableLeft"></table>
+<td>
+    <tr></tr>
+</td>
+</table>
+
+    <div>
+        <input type="text" id="searchInput" placeholder="Search by username" class="searBar">
+        <button class="btn5" onclick="searchUser()">SEARCH</button>
+    </div>
+    <div id="profileDisplay"></div>
+    <button class="brandBtn">C E N T R A L</button>
+    <button class="brandShops">S H O P S</button>
+    <button class="brandTourSites">T O U R  <br>D E S T I N A T I O N S</button>
+</div>
+
+<!--These buttons are controls for GULF-->
+<div id="gulf" style="display: none;">
+    <nav></nav>
+    <a href="#"><img id="proPicGulf" alt="Profile Picture" class="propic"/></a>
+    <p id="userInfoGulf" class="identity"></p>
+    <img class="butterflyBrand" src="C:\Users\user_01\Desktop\CasIki\Phase_3\Version_2\butterfly.png">
+
+    <button id="showInform2" class="btn3">INFORM</button>
+    
+    <div class="dropdownGulf">
+    <button onclick="toggleDropdown()" class="dropbtnGulf">DISTRICT</button>
+    <div id="showGulf" class="dropdownGulf-content">
+    <a href="#">Abau</a>
+    <a href="#">Goilala</a>
+    <a href="#">Kairuku-Hiri</a>
+    <a href="#">Koiari-Hiri</a>
+    <a href="#">Rigo</a>
+</div>
+</div>
+
+<table class="magTableRight">
+<td>
+    <tr></tr>
+</td>
+</table>
+
+<table class="magTableLeft"></table>
+<td>
+    <tr></tr>
+</td>
+</table>
+
+    <div>
+        <input type="text" id="searchInput" placeholder="Search by username" class="searBar">
+        <button class="btn5" onclick="searchUser()">SEARCH</button>
+    </div>
+    <div id="profileDisplay"></div>
+    <button class="brandBtn">G U L F</button>
+    <button class="brandShops">S H O P S</button>
+    <button class="brandTourSites">T O U R  <br>D E S T I N A T I O N S</button>
+</div>
+
+ <!--These buttons are controls for MOROBE-->
+ <div id="morobe" style="display: none;">
+    <nav></nav>
+    <a href="#"><img id="proPicMoro" alt="Profile Picture" class="propic"/></a>
+    <p id="userInfoMoro" class="identity"></p>
+    <img class="butterflyBrand" src="C:\Users\user_01\Desktop\CasIki\Phase_3\Version_2\butterfly.png">
+
+    <button id="showInform2" class="btn3">INFORM</button>
+    
+    <div class="dropdownMoro">
+    <button onclick="toggleDropdown()" class="dropbtnMoro">DISTRICT</button>
+    <div id="showMoro" class="dropdownMoro-content">
+    <a href="#">Abau</a>
+    <a href="#">Goilala</a>
+    <a href="#">Kairuku-Hiri</a>
+    <a href="#">Koiari-Hiri</a>
+    <a href="#">Rigo</a>
+</div>
+</div>
+
+<table class="magTableRight">
+<td>
+    <tr></tr>
+</td>
+</table>
+
+<table class="magTableLeft"></table>
+<td>
+    <tr></tr>
+</td>
+</table>
+
+    <div>
+        <input type="text" id="searchInput" placeholder="Search by username" class="searBar">
+        <button class="btn5" onclick="searchUser()">SEARCH</button>
+    </div>
+    <div id="profileDisplay"></div>
+    <button class="brandBtn">M O R O B E</button>
+    <button class="brandShops">S H O P S</button>
+    <button class="brandTourSites">T O U R  <br>D E S T I N A T I O N S</button>
+</div>
+
+<!-- This controls are for logout -->
+<div id="logout" class="LOut" style="display: none;">
+    <h2 class="LH">Sign in your account</h2>
+    <form id="logoutForm">
+        <img id="proPicOut" alt="Profile Picture" class="propicOut"/>
+        <img class="butterfly" src="C:\Users\user_01\Desktop\CasIki\Phase_3\Version_2\butterfly.png">
+
+        <label for="loginPassword">Password:</label>
+        <input type="password" id="loginPassword" required>
+
+        <button type="submit" class="log" style="display: block;">Login</button>
+        <p>Log into another account? <a href="#" id="chooseAccountLOut">click here</a></p>
+    </form>
+</div> 
+
+    <script src="user_ver-2.js"></script>
+</body>
+</html>

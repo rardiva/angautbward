@@ -1,0 +1,1068 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: teal;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    height: 110px;
+    width: 100%;
+    left: 0;
+    align-items:center;
+    justify-content: space-between;
+    background: linear-gradient(to right, turquoise, teal, darkslategrey);
+    border-bottom: #fff 2px solid;
+    padding: 5px 5%;
+    position: fixed;
+    top: 0;
+    z-index: 50;
+  }  
+
+.container {
+    max-width:100%;
+    margin: 50px auto;
+    padding: 20px;
+    padding-right: 40px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    color: teal;
+}
+
+.log {
+  background: teal;
+  border: 1px solid turquoise; /* Green border */
+  border-radius: 5px;
+  color: #fff;
+  width: 65px;
+  height: 30px;
+}
+
+.log:hover {
+  background-color: turquoise;
+}
+
+.create {
+  background: teal;
+  border: 1px solid turquoise; /* Green border */
+  border-radius: 5px;
+  color: #fff;
+  width: 120px;
+  height: 30px;
+}
+
+.create:hover {
+  background-color: turquoise;
+}
+
+h2 {
+    text-align: center;
+    color: teal;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input, select {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+/*This is the butterfly logo in the form*/
+
+.butterfly {
+    max-width: 50px;
+    margin-top: 160px;
+    margin-left: 270px;
+    position: absolute;
+  }
+
+/*This is the butterfly logo in the Magazine*/
+
+.butterflyBrand {
+    max-width: 100px;
+    top: 5px;
+    margin-left: 50px;
+    position: fixed;
+    z-index: 150;
+  }
+
+
+/*This butterfly appears when in the personal account portal*/
+
+.butterflyPersonal {
+    max-width: 100px;
+    margin-top: 570px;
+    margin-left: 310px;
+    position: absolute;
+  }
+
+/*This butterfly appears when in the msme portal*/
+
+.butterflyMsme {
+    max-width: 100px;
+    margin-top: 770px;
+    margin-left: 310px;
+    position: absolute;
+  }
+
+/* These buttons are for the MAGAZINE*/
+.btn1 {
+  width: 130px;
+  height: 20px;
+  background-color: teal; /* Green background */
+  border: 1px solid turquoise; /* Green border */
+  border-radius: 5px;
+  color: white; /* White text */
+  font-size:15px;
+  padding: 20px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  float: left; /* Float the buttons side by side */
+  margin-left: 370px;
+  top: 40px;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 100;
+}
+
+.btn1:not(:last-child) {
+  border-right: none; /* Prevent double borders */
+}
+
+/* Clear floats (clearfix hack) */
+.btn1:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Add a background color on hover */
+.btn1:hover {
+  background-color: turquoise;
+}
+
+  /*Please note tha these are controls or the buttons displayed on MAGAZINE*/
+
+  .btn2 {
+    width: 130px;
+    height: 20px;
+    background-color: teal; /* Green background */
+    border: 1px solid turquoise; /* Green border */
+    border-radius: 5px;
+    color: white; /* White text */
+    font-size:15px;
+    padding: 20px; /* Some padding */
+    cursor: pointer; /* Pointer/hand icon */
+    float: left; /* Float the buttons side by side */
+    left: 250px;
+    top: 40px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 100;
+  }
+  
+  .btn2:not(:last-child) {
+    border-right: none; /* Prevent double borders */
+  }
+  
+  /* Clear floats (clearfix hack) */
+  .btn2:after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  /* Add a background color on hover */
+  .btn2:hover {
+    background-color: turquoise;
+  }
+
+  .btn3 {
+    width: 130px;
+    height: 20px;
+    background-color: teal; /* Green background */
+    border: 1px solid turquoise; /* Green border */
+    border-radius: 5px;
+    color: white; /* White text */
+    font-size:15px;
+    padding: 20px; /* Some padding */
+    cursor: pointer; /* Pointer/hand icon */
+    float: left; /* Float the buttons side by side */
+    margin-left: 980px;
+    top: 40px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 100;
+  }
+  
+  .btn3:not(:last-child) {
+    border-right: none; /* Prevent double borders */
+  }
+  
+  /* Clear floats (clearfix hack) */
+  .btn3:after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  /* Add a background color on hover */
+  .btn3:hover {
+    background-color: turquoise;
+  }
+
+  .btn4 {
+    background-color: teal; /* Green background */
+    color: white; /* White text */
+    padding: 20px; /* Some padding */
+    font-size:15px;
+    border: 1px solid turquoise; /* Green border */
+    border-radius: 5px;
+    cursor: pointer; /* Pointer/hand icon */
+    width: 130px;
+    height: 20px;
+    float: left; /* Float the buttons side by side */
+    margin-left: 800px;
+    top: 40px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 100;
+  }
+  
+  .btn4:not(:last-child) {
+    border-right: none; /* Prevent double borders */
+  }
+  
+  /* Clear floats (clearfix hack) */
+  .btn4:after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  /* Add a background color on hover */
+  .btn4:hover {
+    background-color: turquoise;
+  }
+
+
+  .btn5 {
+    background-color: transparent; /* Green background */
+    color: white; /* White text */
+    padding-left: 5px;
+    padding-bottom: 20px; /* Some padding */
+    font-size:15px;
+    border: transparent; /* Green border */
+    border-radius: 5px;
+    cursor: pointer; /* Pointer/hand icon */
+    width: 100px;
+    height: 5px;
+    float: left; /* Float the buttons side by side */
+    margin-left: 56px;
+    top: 420px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 200;
+
+  }
+ 
+  .btn5:not(:last-child) {
+    border-right: none; /* Prevent double borders */
+  }
+  
+  /* Clear floats (clearfix hack) */
+  .btn5:after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+    /* Add a background color on hover */
+    .btn5:hover {
+        background-color: turquoise;
+      }
+    
+   
+  /*This is the SEARCH button on magazine*/
+  .searBar{
+    width: 170px;
+    height: 20px;
+    top: 380px;
+    margin-left: 56px;
+    position: fixed;
+    background-color: #fff; /* Green background */
+    border: 1px solid turquoise; /* Turquiose border */
+    border-radius: 5px;
+    z-index: 200;
+  }
+
+  .btn6 {
+    width: 130px;
+    height: 20px;
+    background-color: teal; /* Green background */
+    border: 1px solid turquoise; /* Green border */
+    border-radius: 5px;
+    color: white; /* White text */
+    font-size:15px;
+    padding: 20px; /* Some padding */
+    cursor: pointer; /* Pointer/hand icon */
+    float: left; /* Float the buttons side by side */
+    margin-left: 1200px;
+    top: 40px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 100;
+  }
+  
+  .btn6:not(:last-child) {
+    border-right: none; /* Prevent double borders */
+  }
+  
+  /* Clear floats (clearfix hack) */
+  .btn6:after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  /* Add a background color on hover */
+  .btn6:hover {
+    background-color: turquoise;
+  }
+
+
+  /* These buttons are for the PROFILE*/
+.btn1Prof {
+  width: 130px;
+  height: 20px;
+  background-color: teal; /* Green background */
+  border: 1px solid turquoise; /* Green border */
+  border-radius: 5px;
+  color: white; /* White text */
+  font-size:15px;
+  padding: 20px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  float: left; /* Float the buttons side by side */
+  margin-left: 250px;
+  top: 40px;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 100;
+}
+
+.btn1Prof:not(:last-child) {
+  border-right: none; /* Prevent double borders */
+}
+
+/* Clear floats (clearfix hack) */
+.btn1Prof:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Add a background color on hover */
+.btn1Prof:hover {
+  background-color: turquoise;
+}
+
+  /*Please note tha these are controls or the buttons displayed on MAGAZINE*/
+
+  .btn2Prof {
+    width: 130px;
+    height: 20px;
+    background-color: teal; /* Green background */
+    border: 1px solid turquoise; /* Green border */
+    border-radius: 5px;
+    color: white; /* White text */
+    font-size:15px;
+    padding: 20px; /* Some padding */
+    cursor: pointer; /* Pointer/hand icon */
+    float: left; /* Float the buttons side by side */
+    left: 450px;
+    top: 40px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 100;
+  }
+  
+  .btn2Prof:not(:last-child) {
+    border-right: none; /* Prevent double borders */
+  }
+  
+  /* Clear floats (clearfix hack) */
+  .btn2Prof:after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  /* Add a background color on hover */
+  .btn2Prof:hover {
+    background-color: turquoise;
+  }
+
+  .btn3Prof {
+    width: 130px;
+    height: 20px;
+    background-color: teal; /* Green background */
+    border: 1px solid turquoise; /* Green border */
+    border-radius: 5px;
+    color: white; /* White text */
+    font-size:15px;
+    padding: 20px; /* Some padding */
+    cursor: pointer; /* Pointer/hand icon */
+    float: left; /* Float the buttons side by side */
+    margin-left: 650px;
+    top: 40px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 100;
+  }
+  
+  .btn3Prof:not(:last-child) {
+    border-right: none; /* Prevent double borders */
+  }
+  
+  /* Clear floats (clearfix hack) */
+  .btn3Prof:after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  /* Add a background color on hover */
+  .btn3Prof:hover {
+    background-color: turquoise;
+  }
+
+  .btn4Prof {
+    background-color: teal; /* Green background */
+    color: white; /* White text */
+    padding: 20px; /* Some padding */
+    font-size:15px;
+    border: 1px solid turquoise; /* Green border */
+    border-radius: 5px;
+    cursor: pointer; /* Pointer/hand icon */
+    width: 130px;
+    height: 20px;
+    float: left; /* Float the buttons side by side */
+    margin-left: 850px;
+    top: 40px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 100;
+  }
+  
+  .btn4Prof:not(:last-child) {
+    border-right: none; /* Prevent double borders */
+  }
+  
+  /* Clear floats (clearfix hack) */
+  .btn4Prof:after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  /* Add a background color on hover */
+  .btn4Prof:hover {
+    background-color: turquoise;
+  }
+
+
+  .btn5Prof {
+    background-color: teal; /* Green background */
+    color: white; /* White text */
+    padding: 20px; /* Some padding */
+    font-size:15px;
+    border: 1px solid turquoise; /* Green border */
+    border-radius: 5px;
+    cursor: pointer; /* Pointer/hand icon */
+    width: 130px;
+    height: 10px;
+    float: left; /* Float the buttons side by side */
+    margin-left: 1050px;
+    top: 40px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 200;
+
+  }
+ 
+  .btn5Prof:not(:last-child) {
+    border-right: none; /* Prevent double borders */
+  }
+  
+  /* Clear floats (clearfix hack) */
+  .btn5Prof:after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+    /* Add a background color on hover */
+    .btn5Prof:hover {
+        background-color: turquoise;
+      }
+
+  .btn6Prof {
+    width: 130px;
+    height: 20px;
+    background-color: teal; /* Green background */
+    border: 1px solid turquoise; /* Green border */
+    border-radius: 5px;
+    color: white; /* White text */
+    font-size:15px;
+    padding: 20px; /* Some padding */
+    cursor: pointer; /* Pointer/hand icon */
+    float: left; /* Float the buttons side by side */
+    margin-left: 1250px;
+    top: 40px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 100;
+  }
+  
+  .btn6Prof:not(:last-child) {
+    border-right: none; /* Prevent double borders */
+  }
+  
+  /* Clear floats (clearfix hack) */
+  .btn6Prof:after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  /* Add a background color on hover */
+  .btn6Prof:hover {
+    background-color: turquoise;
+  }
+  
+/*This is the PROFILE PICTURE that appears in MAGAZINE*/
+.propic {
+    width:130px;
+    height:130px;
+    top: 140px;
+    margin-left: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid turquoise;
+    position: fixed;
+    cursor: pointer;
+    z-index: 200;
+  }
+    /* Add a background color on hover */
+    .propic:hover {
+      background-color: rgb(13, 244, 13);
+    }
+
+/*This is the PROFILE PICTURE that appears in the logout portal*/
+.propicOut {
+  width:130px;
+  height:130px;
+  top: 100px;
+  margin-left: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid turquoise;
+  position: fixed;
+  cursor: pointer;
+  z-index: 200;
+}
+  /* Add a background color on hover */
+  .propicOut:hover {
+    background-color: rgb(13, 244, 13);
+  }
+  
+  .LOut {
+max-width:400px;
+height: 500px;
+margin: 50px auto;
+padding-top: 450px;
+padding: 20px;
+padding-right: 40px;
+background: white;
+border-radius: 5px;
+box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+color: teal;
+  }
+
+.LH{
+  text-align: center;
+  color: teal;
+  margin-top: 200px;
+}
+
+  .identity {
+  color: #fff; /* White text */
+  font-size: 13px;
+  margin-left: 60px;
+  top: 270px;
+  scroll-padding-inline: 20px;
+  position: fixed;
+  z-index: 100;
+  }
+
+/*This is the identity in PROFLILE*/
+
+
+/*This is the propic in PROFILE*/
+.propicProf {
+  width:100px;
+  height:100px;
+  top: 110px;
+  margin-left: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #fff;
+  position: fixed;
+  cursor: pointer;
+  z-index: 200;
+}
+
+.proPicCent {
+  width:300px;
+  height:300px;
+  top: 210px;
+  margin-left: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #fff;
+  position: fixed;
+  cursor: pointer;
+  z-index: 200;
+}
+
+.coverPhotoProf {
+  width:430px;
+  height:430px;
+  top: 140px;
+  margin-left: 80px;
+  object-fit: cover;
+  border: 4px solid #fff;
+  position: fixed;
+  cursor: pointer;
+  z-index: 180;
+
+}
+
+.identityProf {
+  color: #fff; /* White text */
+  font-size: 28px;
+  margin-left: 240px;
+  top: 560px;
+  scroll-padding-inline: 20px;
+  position: fixed;
+  z-index: 210;
+  }
+
+  .positionProf {
+    color: #fff; /* White text */
+    font-size: 20px;
+    margin-left: 280px;
+    top: 610px;
+    scroll-padding-inline: 20px;
+    position: fixed;
+    z-index: 210;
+    }
+
+  .resumeTable {
+    background-color: #fff;
+    width: 900px;
+    height: 700px;
+    margin-left: 590px;
+    top:10px;
+    position: fixed;
+    z-index: 50px;
+  }
+
+    /* Add a background color on hover */
+    .propic:hover {
+      background-color: rgb(13, 244, 13);
+    }
+
+   /* This button creates the profile heading below the image */
+.btnPro {
+  width: 500px;
+  height: 20px;
+  background-color:transparent; /* Green background */
+  border: transparent; /* Green border */
+  border-radius: 0px;
+  color: teal; /* White text */
+  font-size:30px;  
+  float: left; 
+  left: 730px;
+  top: 160px;
+  position: fixed;
+  z-index: 100;
+}
+  
+  /*This is the Heading of the CONTENT in MAGAZINE*/
+  .brandBtn {
+    width: 300px;
+    height: 300px;
+    background-color:transparent; /* Green background */
+    border: transparent; /* Green border */
+    border-radius: 0px;
+    color: white; /* White text */
+    font-size:30px;
+    left: 0px;
+    top: 190px;
+    position: fixed;
+    z-index: 100;
+  }
+
+  .brandShops {
+    width: 300px;
+    height: 300px;
+    background-color:transparent; /* Green background */
+    border: transparent; /* Green border */
+    border-radius: 0px;
+    color: white; /* White text */
+    font-size:15px;
+    left: 1125px;
+    top: 2px;
+    position: fixed;
+    z-index: 90;
+  }
+
+  .brandTourSites {
+    width: 300px;
+    height: 300px;
+    background-color:transparent; /* Green background */
+    border: transparent; /* Green border */
+    border-radius: 0px;
+    color: white; /* White text */
+    font-size:15px;
+    left: 1125px;
+    top: 230px;
+    position: fixed;
+    z-index: 100;
+  }
+  
+  /* Dropdown Button This is the PROVINCE BUTTON in MAGAZINE*/
+.dropbtn {
+    background-color: teal; /* Green background */
+    color: white; /* White text */
+    padding: 20px; /* Some padding */
+    font-size:15px;
+    border: 1px solid turquoise; /* Green border */
+    border-radius: 5px;
+    cursor: pointer; /* Pointer/hand icon */
+    width: 130px;
+    height: 20px;
+    float: left; /* Float the buttons side by side */
+    margin-left: 1140px;
+    top: 40px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 100;
+  }
+  
+  /* Dropdown button on hover & focus */
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: turquoise;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: fixed;
+    font-size: 16px;
+    background-color: #f1f1f1;
+    min-width: 140px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: index;
+    top: 100px;
+    margin-left: 1140px;
+    border: 1px solid turquoise; /* Green border */
+    border-radius: 5px;
+    z-index: 200;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 1px 6px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  /* Show the dropdown menu */
+  .show {
+    display: block;
+  }
+
+    /* Dropdown Button This is the PROVINCE BUTTON in CENTRAL*/
+.dropbtnCent {
+  background-color: teal; /* Green background */
+  color: white; /* White text */
+  padding: 20px; /* Some padding */
+  font-size:15px;
+  border: 1px solid turquoise; /* Green border */
+  border-radius: 5px;
+  cursor: pointer; /* Pointer/hand icon */
+  width: 130px;
+  height: 20px;
+  float: left; /* Float the buttons side by side */
+  margin-left: 1140px;
+  top: 40px;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 100;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtnCent:hover, .dropbtnCent:focus {
+  background-color: turquoise;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdownCent {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdownCent-content {
+  display: none;
+  position: fixed;
+  font-size: 16px;
+  background-color: #f1f1f1;
+  min-width: 140px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: index;
+  top: 100px;
+  margin-left: 1140px;
+  border: 1px solid turquoise; /* Green border */
+  border-radius: 5px;
+  z-index: 200;
+}
+
+/* Links inside the dropdown */
+.dropdownCent-content a {
+  color: black;
+  padding: 1px 6px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdownCent-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu */
+.showCent {
+  display: block;
+}
+
+  .magTableRight {
+    background-color: rgb(10, 94, 86);
+    width: 420px;
+    height: 700px;
+    margin-left: 1125px;
+    top:10px;
+    position: fixed;
+    z-index: 10px;
+  }
+
+  .magTableLeft {
+    background: linear-gradient(to right, turquoise, teal, rgb(10, 94, 86));
+    width: 352px;
+    height: 700px;
+    margin-left: 0px;
+    top:10px;
+    position: fixed;
+    z-index: 10px;
+  }
+  
+  
+/*These are CONTROLS for POSTING FILES*/
+.upLoad{
+    background-color: white;
+    color: black;
+    width: 400px;
+    height:30px;
+    left: 537px;
+    border-radius: 5px;
+    position: fixed;
+    padding-top: 10px;
+    padding-left: 10px;
+    top: 49px;
+    z-index: 150;
+    }
+
+    .postFile {
+    background-color: white;
+    max-width: 200px;
+    height:20px;
+    border-radius: 5px;
+    left: 400px;
+    position: fixed;
+    top: 40px;
+    z-index: 130;
+    }
+    
+    .containerPost {
+      background-color: white;
+      margin: auto;
+      overflow: hidden;
+      position: absolute;
+
+    }
+    
+    .containerPost input, button {
+      margin: 10px;
+      padding: 10px;
+      width: 100%;
+      width: 85px;
+    }
+    
+    #mediaContainer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 120px;
+      
+    }
+   
+    .media-item {
+      background-color: white;
+      border: 1px solid #ccc;
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-top: 20px;
+      justify-content: center;
+      margin-top: 10px;
+      max-width: 700px;
+      z-index: 10;
+    }
+    
+    .media-item img, .media-item video {
+      object-fit: fit;
+max-width: 700px;
+    }
+    
+    .actions {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 5px;
+    }
+    
+    button.like, button.comment, button.share {
+      background-color: teal;
+      color: white;
+      border: turquoise;
+      padding: 5px 10px;
+      cursor: pointer;
+    }
+    
+    button.like:hover, button.comment:hover, button.share:hover {
+      background-color: turquoise;
+    }
+    
+    .comments {
+      margin-top: 10px;
+    }
+    
+    .comment {
+      background-color: #f0f0f0;
+      padding: 5px;
+      margin: 5px 0;
+      border-radius: 5px;
+    }
+
+
+    .editProfile {
+      top: 10vh;
+      width: 600px;
+      background: #fff;
+      padding: 50px;
+      border-radius: 5px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      position: absolute;
+      left: 50%;
+  }
+    
+  label {
+      font-weight: bold;
+  }
+  
+  input, select {
+      width: 100%;
+      padding: 8px;
+      margin: 8px 0;
+  }
+  
+  .EditButton {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px;
+      border: none;
+      cursor: pointer;
+      width: 48%;
+  }
+  
+  EditButton:hover {
+      background-color: #45a049;
+  }
+  
+  #edit-EditButton {
+      background-color: #2196F3;
+  }
+  
+  #edit-EditButton:hover {
+      background-color: #0b7dda;
+  }
+  
+
