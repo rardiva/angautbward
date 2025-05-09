@@ -94,6 +94,7 @@ header a:hover{
   background-position: center;
   background-size: cover;
   text-align:center;
+  z-index:1000;
   color:#000;
 }
 
