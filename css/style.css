@@ -307,7 +307,7 @@ footer{
   display: block; /* Removes unwanted spacing below images */
 }
 
-
+/*
 .contain { 
   width: 40%; 
  margin: auto; 
@@ -318,7 +318,7 @@ footer{
   display: none; 
   border: 1px solid #ccc; 
   padding: 20px; 
-}
+} */
 
         input { 
           display: block; 
