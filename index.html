@@ -10,8 +10,8 @@
      <link rel="icon" href="img/img8.png" type="image/png">
         <style>
         body { font-family: Arial, sans-serif; text-align: center; }
-        .cont { width: 40%; margin: auto; padding: 20px; }
-        .form-cont { display: none; border: 1px solid #ccc; padding: 20px; }
+        .container { width: 40%; margin: auto; padding: 20px; }
+        .form-container { display: none; border: 1px solid #ccc; padding: 20px; }
         input { display: block; margin: 10px auto; padding: 8px; width: 80%; }
         button { padding: 10px 20px; cursor: pointer; }
     </style>
@@ -41,7 +41,7 @@
     <section onload="showForm('login')"> <!-- Defines a section for showcasing content -->
        <div class="cont">
         <h2>Login</h2>
-        <div id="loginForm" class="form-cont">
+        <div id="loginForm" class="form-container">
             <form action="login.php" method="POST">
                 <input type="email" name="login_email" placeholder="Email" required>
                 <input type="password" name="login_password" placeholder="Password" required>
@@ -51,7 +51,7 @@
         </div>
 
         <h2>Register</h2>
-        <div id="registerForm" class="form-cont">
+        <div id="registerForm" class="form-container">
             <form action="register.php" method="POST">
                 <input type="text" name="fullname" placeholder="Full Name" required>
                 <input type="email" name="email" placeholder="Email" required>
