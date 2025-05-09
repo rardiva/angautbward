@@ -313,12 +313,12 @@ footer{
  margin: auto; 
  padding: 20px; 
 }
-        
+   */     
 .form-cont { 
   display: none; 
   border: 1px solid #ccc; 
   padding: 20px; 
-} */
+} 
 
         input { 
           display: block; 
