@@ -26,10 +26,10 @@
       </div>
     </header>
 
-    <section> <!-- Defines a section for showcasing content -->
-       <div class="contain">
+    <section onload="showForm('login')">
+    <div class="container">
         <h2>Login</h2>
-        <div id="loginForm">  <!--class="form-cont"-->
+        <div id="loginForm" class="form-container">
             <form action="login.php" method="POST">
                 <input type="email" name="login_email" placeholder="Email" required>
                 <input type="password" name="login_password" placeholder="Password" required>
@@ -39,7 +39,7 @@
         </div>
 
         <h2>Register</h2>
-        <div id="registerForm" class="form-cont">
+        <div id="registerForm" class="form-container">
             <form action="register.php" method="POST">
                 <input type="text" name="fullname" placeholder="Full Name" required>
                 <input type="email" name="email" placeholder="Email" required>
