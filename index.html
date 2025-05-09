@@ -7,20 +7,8 @@
     <meta name="author" content="Brad Traversy"> <!-- Identifies the author of the document -->
     <title>Online TB Appointment</title> <!-- Sets the title of the webpage -->
     <link rel="stylesheet" href="./css/style.css"> <!-- Links an external CSS file -->
+    <link rel="stylesheet" href="./css/form.css">
      <link rel="icon" href="img/img8.png" type="image/png">
-        <style>
-        body { font-family: Arial, sans-serif; text-align: center; }
-        .container { width: 40%; margin: auto; padding: 20px; }
-        .form-container { display: none; border: 1px solid #ccc; padding: 20px; }
-        input { display: block; margin: 10px auto; padding: 8px; width: 80%; }
-        button { padding: 10px 20px; cursor: pointer; }
-    </style>
-    <script>
-        function showForm(formType) {
-            document.getElementById("loginForm").style.display = (formType === 'login') ? "block" : "none";
-            document.getElementById("registerForm").style.display = (formType === 'register') ? "block" : "none";
-        }
-    </script>
   </head>
   <body> <!-- Contains the content of the webpage -->
     <header> <!-- Defines the header section -->
@@ -96,6 +84,6 @@
     <footer> <!-- Defines the footer section -->
       <p>Make an appointment for TB testing at Angau General Hospital today.</p> <!-- Footer text -->
     </footer>
-   <script src="user_ver-2.js"></script>
+    <script src="script/form.js"></script>
   </body>
 </html> <!-- Ends the HTML document -->
