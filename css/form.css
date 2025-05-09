@@ -3,17 +3,18 @@ body {
  text-align: center; 
 } 
 
-.container { 
+.cont { 
   width: 40%; 
  margin: auto; 
  padding: 20px; 
 }
         
-.form-container { 
+.form-cont { 
   display: none; 
   border: 1px solid #ccc; 
   padding: 20px; 
 }
+
         input { 
           display: block; 
           margin: 10px auto; 
