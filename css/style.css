@@ -307,29 +307,4 @@ footer{
   display: block; /* Removes unwanted spacing below images */
 }
 
-/*
-.contain { 
-  width: 40%; 
- margin: auto; 
- padding: 20px; 
-}
-     
-.form-cont { 
-  display: none; 
-  border: 1px solid #ccc; 
-  padding: 20px; 
-} 
-
-        input { 
-          display: block; 
-          margin: 10px auto; 
-          padding: 8px; 
-          width: 80%; 
-        }
-  */ 
-
-        button { 
-          padding: 10px 20px; 
-          cursor: pointer; 
-        }
 
